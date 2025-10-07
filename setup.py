@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.2'
+VERSION = '0.1.4'
 DESCRIPTION = 'AYNLP: A lightweight NLP toolkit built by Ankit and Yash for tokenization, stemming, lemmatization, and more. Visit https://github.com/aijadugar/AYNLP to explore the project.'
 
 LONG_DESCRIPTION = """
@@ -24,6 +24,23 @@ The library is **easy to use**, highly **extensible**, and ideal for educational
 Visit the GitHub repository: [AYNLP](https://github.com/aijadugar/AYNLP) to fork the project, raise issues, or contribute code. Every contribution helps the community and strengthens the toolkit for everyone.
 
 Whether you are a student, researcher, or developer, AYNLP offers a playground for learning and contributing to real-world NLP projects.
+
+---
+
+## ⚡ How to Use AYNLP
+
+```python
+from aynlp import AYNLP
+
+# Initialize the pipeline
+aynlp = AYNLP()
+
+# Analyze text
+result = aynlp.analyze("The yesterday's festival was awesome!")
+
+# Print the results
+print(result)
+
 """
 
 setup(
