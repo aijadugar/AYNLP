@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.0'
+VERSION = '0.1.2'
 DESCRIPTION = 'AYNLP: A lightweight NLP toolkit built by Ankit and Yash for tokenization, stemming, lemmatization, and more. Visit https://github.com/aijadugar/AYNLP to explore the project.'
 
 LONG_DESCRIPTION = """
@@ -36,10 +36,12 @@ setup(
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
     install_requires=[
-        "nltk>=3.8.1",
-        "spacy>=3.7.0",
-        "tabulate>=0.9.0",
-        "textblob>=0.17.1",
+    "numpy>=1.26.0,<2.0",
+    "scipy>=1.11.0,<1.28.0",
+    "spacy>=3.7.0",
+    "nltk>=3.8.1",
+    "tabulate>=0.9.0",
+    "textblob>=0.17.1"
     ],
     python_requires='>=3.7',
     license="MIT",
